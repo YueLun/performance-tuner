@@ -5,7 +5,7 @@
 
 Name:		performance-tuner
 Version:	0.1
-Release:	2
+Release:	3
 
 Summary:	Scripts that tune performance of CPUs, disks and network
 License:	MIT
