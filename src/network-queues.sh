@@ -1,6 +1,9 @@
 #!/bin/sh
 
 cpus=`fgrep -c processor /proc/cpuinfo`
+if [ $cpus -ge 63 ] ; then
+	cpus=63
+fi
 q=`fgrep -i eth /proc/interrupts | awk '{print $1}' | cut -d: -f 1`
 
 ENTR=$[4096*$cpus]
