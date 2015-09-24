@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 cpus=`fgrep -c processor /proc/cpuinfo`
 if [ $cpus -ge 32 ] ; then
